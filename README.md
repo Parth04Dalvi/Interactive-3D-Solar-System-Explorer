@@ -42,5 +42,3 @@ Scroll Wheel: Zoom in and out of the scene.
 Interact: Click on any planet or the Sun to reveal the Information Panel with its scaled metrics.
 
 Control Time: Adjust the Time Warp Speed slider to slow down or accelerate the orbital simulation.
-
-📸 Screenshots

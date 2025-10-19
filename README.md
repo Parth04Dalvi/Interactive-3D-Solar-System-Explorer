@@ -1,44 +1,73 @@
-🪐 Interactive 3D Solar System Explorer
-A Real-time WebGL Simulation built with Three.js
-This project is a single-page web application that renders an interactive, navigable model of our solar system using Three.js. It showcases mastery of 3D graphics programming, precise mathematical modeling of orbits, and high-performance front-end optimization.
+🚀 3D Solar System Explorer
 
-✨ Key Features & Technical Highlights
-This explorer demonstrates expertise in complex 3D rendering and interaction:
+This is a real-time, interactive 3D simulation of our solar system built using the Three.js library, enabling users to explore celestial mechanics, view orbits, and check planetary data in a dynamic environment.
 
-Real-time Orbital Mechanics: Implemented physics modeling to calculate planetary orbits and axial rotation using the requestAnimationFrame loop.
+✨ Key Features
 
-Planetary Trails: Continuous manipulation of Line Geometry (BufferGeometry) to dynamically render faint, persistent trails behind each planet, showcasing performance optimization by managing vertex data.
+Interactive 3D Visualization: Renders a scaled model of the Sun and the eight major planets, complete with a star field background and appropriate lighting.
 
-Advanced Raycasting & Interactivity: Uses Three.js Raycasting for sophisticated interactions:
+Physics Simulation: Implements orbital movement and axial rotation for all celestial bodies.
 
-Hover Glow: Identifies planets on mouse hover and applies a subtle glow using material.emissive.
+Dynamic Camera Controls: Provides smooth, intuitive control over the camera:
 
-Click Panel: On click, displays the Information Panel with scaled metrics.
+Mouse Drag / Touch Swipe: Orbit the entire system.
 
-Complex Geometry: Custom rendering of Saturn's Rings using RingGeometry with proper tilt (rotation.x = Math.PI / 2), enhancing visual fidelity.
+Mouse Wheel / Pinch: Zoom in and out.
 
-Custom Camera Control: Implemented custom mousedown, mousemove, and wheel handlers for smooth, non-linear camera rotation and zoom control.
+Click-to-Inspect: Click on any planet or the Sun to reveal a dedicated information panel showing its scaled size, orbital distance, and speed.
 
-Performance Rendering: Utilized optimization techniques for running a smooth, CPU-efficient simulation with multiple dynamic objects.
+Planetary Trails: Visualizes the path of each planet with a dynamic trail line, distinct from the static orbit path.
 
-🛠️ Technology Stack
-3D Library: Three.js (WebGL)
+Time Warp Control: Use the slider in the top right to adjust the simulation speed from 0.1x (slow motion) up to 5.0x (fast forward).
 
-Frontend: HTML5, Vanilla JavaScript
+Saturn Rings: Includes a visually represented ring system for Saturn, tilted to mimic its natural axial tilt.
 
-Styling: Tailwind CSS (for modern UI overlays and controls)
+▶️ How to Use
 
-🚀 How to Run the Explorer
-This project is designed to run instantly in any modern web browser as a single file.
+The application is self-contained in a single HTML file and runs directly in the browser, leveraging your computer's GPU via WebGL.
 
-Open the file: Load solar_system_explorer/index.html in your browser.
+Feature
 
-Navigate:
+Control
 
-Click & Drag/Touch: Rotate the camera's view angle around the Sun.
+Action
 
-Scroll Wheel: Zoom in and out of the scene.
+Orbit Camera
 
-Interact: Click on any planet or the Sun to reveal the Information Panel with its scaled metrics.
+Mouse Left-Click and Drag / Touch Swipe
 
-Control Time: Adjust the Time Warp Speed slider to slow down or accelerate the orbital simulation.
+Rotate the view around the Sun (center).
+
+Zoom View
+
+Mouse Wheel Scroll
+
+Move the camera closer to or farther from the center.
+
+Inspect Planet
+
+Single Click on a Planet
+
+Displays the detailed information panel at the bottom.
+
+Toggle Orbits
+
+Pause Orbits / Start Orbits button
+
+Stops/resumes the orbital motion animation.
+
+Adjust Speed
+
+Time Warp Speed Slider
+
+Changes the rate of all orbital and rotational animations.
+
+⚙️ Technology Stack
+
+Core Library: Three.js (r128 via CDN) for all 3D scene rendering, geometries, lighting, and camera management using WebGL.
+
+Rendering: WebGL (via Three.js)
+
+Structure: HTML5 and Vanilla JavaScript (ES6+).
+
+Styling & UI: Tailwind CSS (via CDN) for the responsive overlay, control panel, and planet information display.

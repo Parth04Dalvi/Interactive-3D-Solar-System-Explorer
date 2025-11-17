@@ -1,5 +1,8 @@
 🚀 3D Solar System Explorer
 
+<img width="826" height="731" alt="image" src="https://github.com/user-attachments/assets/318324f5-9607-4c43-a103-1fb4b1cbe116" />
+
+
 This is a real-time, interactive 3D simulation of our solar system built using the Three.js library, enabling users to explore celestial mechanics, view orbits, and check planetary data in a dynamic environment.
 
 ✨ Key Features
